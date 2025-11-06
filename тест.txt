@@ -1,0 +1,55 @@
+1 - A Сокрытие деталей реализации и предоставление интерфейса для работы
+2 - здесь ошибка в том что класс Admin уже унаследовал у User поэтому повторно писать атрибут это ошибка
+3 - пропускаем
+4 - пропускаем
+5 - в пятом выведется 4 потому что во первых car1.wheels не принадлежит классу Car как атрибут 
+во вторых если вывести саr1.wheels то тогда будет 3 а там в принте car2
+6 - class Character:
+    def __init__(self, name, health):
+        self.name = name
+        self.health = health
+    
+    def profile(self):
+        return f'Имя:{self.name} Здоровье: {self.health}'
+class Warrior(Character):
+    def atack(self):
+        return 'Атака'
+    
+class Mage(Character):
+    def atack(self):
+        return 'Магия!'
+    
+class Archer(Character):
+    def atack(self):
+        return 'Лучники!'
+    
+character = Character()
+warrior = Warrior()
+mage = Mage()
+archer = Archer()
+character.profile()
+warrior.atack()
+mage.atack()
+archer.atack()
+7 - class Shape:
+    def __init__(self, name):
+        self.name = name
+
+    def area(self):
+        return
+    
+class Rectangle(Shape):
+
+    def area(a):
+        return a * a
+    
+class Circle(Shape):
+    def area(r):
+        return 3.14 * (r ** 2)
+    
+shape = Shape('Фигура')
+rectangle = Rectangle
+circle = Circle
+print(rectangle.area(3))
+print(circle.area(4))
+8 - 
